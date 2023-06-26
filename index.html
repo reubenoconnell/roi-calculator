@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mentoring Program ROI Calculator</title>
+</head>
+<body>
+  <h1>Mentoring Program ROI Calculator</h1>
+  <form>
+    <label for="participants">Number of Participants:</label>
+    <input type="number" id="participants" required><br>
+
+    <label for="salary">Average Employee Salary:</label>
+    <input type="number" id="salary" required><br>
+
+    <label for="turnoverRate">Annual Employee Turnover Rate:</label>
+    <input type="number" id="turnoverRate" required><br>
+
+    <label for="costOfTurnover">Cost of Employee Turnover (% of Salary):</label>
+    <input type="number" id="costOfTurnover" required><br>
+
+    <label for="reductionInTurnover">Reduction in Turnover (%):</label>
+    <input type="number" id="reductionInTurnover" required><br>
+
+    <label for="costOfInvestment">Cost of Investment in Mentoring Program:</label>
+    <input type="number" id="costOfInvestment" required><br>
+
+    <button type="button" id="calculateButton">Calculate ROI</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="roi-calculator.js" type="module"></script>
+</body>
+</html>
