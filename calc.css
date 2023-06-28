@@ -3,12 +3,17 @@
 
 body {
 font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+line-height: 1.5rem;
 }
 .calculator-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  height: 30rem;
 }
 
 .calculator-heading {
@@ -34,12 +39,14 @@ font-family: 'Poppins', sans-serif;
 
 .calculator-form label {
   text-align: left;
+  font-weight: 500;
 }
 
 
 .calculator-form input {
   width: 10rem;
   padding: 5px;
+  text-align: center;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -53,7 +60,7 @@ font-family: 'Poppins', sans-serif;
 
 .result {
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 
 }
 
@@ -62,8 +69,14 @@ button {
   border-radius: 4px;
   border: 1px solid #ccc;
   width: 10rem;
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
 }
 
+button:hover {
+  background-color: #236d9e;
+}
   .tooltip {
  position: relative;
     display: inline;
@@ -80,9 +93,6 @@ button {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 10%;
-    left: 10%;
-    transform: translateX(20%) translateY(100%);
     opacity: 0;
     transition: opacity 0.3s;
   }
